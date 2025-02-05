@@ -16,7 +16,7 @@ public class SceneLoadHandler : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) // 페이드 인,아웃 효과
     {
         fadePanel.alpha = 1;
-        fadePanel.DOFade(0, 3f).SetEase(Ease.InOutQuad); // 처음엔 느리고 점점빨라짐
+        fadePanel.DOFade(0, 5f).SetEase(Ease.InOutQuad); // 처음엔 느리고 점점빨라짐
     }
     void OnDestroy()
     {

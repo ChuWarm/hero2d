@@ -22,7 +22,15 @@ public class ButtonControl : MonoBehaviour
     
     void ChangeScene()
     {
+        button.interactable = false; // 버튼 비활성화
+        Invoke("OnEnableButton", 5f);
         DOVirtual.DelayedCall(2f, () => SceneManager.LoadScene("LoadingScene")); //2초뒤 씬전환
+    }
+    
+    //버튼 재활성화
+    private void OnEnableButton()
+    {
+        button.interactable = true;
     }
 
     void OnDestroy()
