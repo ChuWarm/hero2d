@@ -307,6 +307,7 @@ GameObject:
   - component: {fileID: 1023209943}
   - component: {fileID: 1023209942}
   - component: {fileID: 1023209941}
+  - component: {fileID: 1023209945}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -398,6 +399,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1023209945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023209940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e298ca3fabb790a49bb00db3ebe8f58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadePanel: {fileID: 1185294917}
 --- !u!1 &1185294916
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,14 +424,13 @@ GameObject:
   - component: {fileID: 1185294920}
   - component: {fileID: 1185294919}
   - component: {fileID: 1185294917}
-  - component: {fileID: 1185294918}
   m_Layer: 5
   m_Name: FadePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!225 &1185294917
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -430,19 +443,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &1185294918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1185294916}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b29db6adbc99d147a7785a727d67609, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fadePanel: {fileID: 0}
 --- !u!114 &1185294919
 MonoBehaviour:
   m_ObjectHideFlags: 0
